@@ -1,0 +1,315 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E90FF;
+}
+
+a:hover {
+    color: #1E90FF;
+}
+
+/* ฟอนต์สำหรับ header */
+header {
+    background-color: #1E90FF;
+    padding: 10px 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5rem; /* ขนาดฟอนต์ที่ยืดหยุ่น */
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1E90FF;
+}
+
+nav ul {
+    list-style-type: none; /* ลบจุดหน้าหมายเลข */
+    padding: 0;
+    margin: 0;
+    display: flex; /* ใช้ flexbox เพื่อให้เมนูแสดงในแถวเดียวกัน */
+}
+
+nav ul li {
+    margin-right: 20px; /* ช่องว่างระหว่างเมนู */
+}
+
+nav ul li a {
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: #000; /* สีข้อความ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+}
+
+nav ul li a:hover {
+    color: #1E90FF; /* เปลี่ยนสีข้อความเมื่อ hover */
+}
+
+/* Hero Section */
+.hero {
+    margin: 40px 0;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.form-item {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    background-color: #f9f9f9; /* พื้นหลังสีอ่อน */
+    padding: 20px; /* เพิ่มพื้นที่รอบๆ */
+    margin: 30px auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    border-radius: 10px; /* ขอบมน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    max-width: 600px; /* กำหนดความกว้างสูงสุด */
+    font-family: Arial, sans-serif; /* ฟอนต์อ่านง่าย */
+}
+
+.form-item h2 {
+    color: #1E90FF; /* สีน้ำเงินเข้ม */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.form-item p {
+    color: #333; /* สีเทาเข้ม */
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.form-link {
+    display: inline-block; /* ทำให้ลิงก์เป็นปุ่ม */
+    background-color: #1E90FF; /* สีพื้นหลังปุ่ม */
+    color: #fff; /* สีตัวอักษร */
+    padding: 10px 20px; /* ขนาดปุ่ม */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    border-radius: 5px; /* ขอบมน */
+    font-weight: bold; /* ตัวหนา */
+    transition: background-color 0.3s; /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+.form-link:hover {
+    background-color: #003f7f; /* สีเข้มขึ้นเมื่อชี้เมาส์ */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+}
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+footer a:hover {
+    color: #1E90FF;
+}
+/* เพิ่มการตกแต่งให้กับตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;  /* รวมขอบตาราง */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1E90FF;  /* สีพื้นหลังของหัวตาราง */
+    color: white;  /* สีตัวหนังสือของหัวตาราง */
+}
+
+td {
+    background-color: #f9f9f9;  /* สีพื้นหลังของเซลล์ข้อมูล */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;  /* เพิ่มสีพื้นหลังให้กับแถวคู่ */
+}
+
+td ul {
+    margin-left: 20px;
+}
+
+a {
+    color: #1E90FF;  /* สีของลิงก์ */
+    text-decoration: none;  /* ไม่ให้ลิงก์มีเส้นใต้ */
+}
+
+a:hover {
+    color: #1E90FF;  /* เมื่อวางเมาส์บนลิงก์จะเปลี่ยนสี */
+}
+main {
+    background-color: #f9f9f9; /* พื้นหลังอ่อน */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    max-width: 800px; /* กำหนดความกว้าง */
+    font-family: Arial, sans-serif; /* ใช้ฟอนต์อ่านง่าย */
+}
+
+section h1 {
+    color: #1E90FF; /* สีน้ำเงินเข้ม */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1E90FF; /* เส้นใต้หัวข้อ */
+    padding-bottom: 5px;
+}
+
+section p {
+    color: #333; /* สีเทาเข้ม */
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section ol {
+    padding-left: 20px; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
+    color: #333; /* สีเทาเข้ม */
+    font-size: 1em;
+}
+
+section ol li {
+    margin-bottom: 10px; /* ระยะห่างระหว่างรายการ */
+    line-height: 1.5;
+}
+
+section ol li::marker {
+    color: #1E90FF; /* เปลี่ยนสีตัวเลข */
+    font-weight: bold;
+}
+
+/* การจัดรูปแบบให้ตารางตอบสนองต่ออุปกรณ์ขนาดเล็ก */
+/* การจัดรูปแบบสำหรับหน้าจอมือถือ */
+@media (max-width: 680px) {
+    body {
+        font-size: 14px; /* ลดขนาดฟอนต์หลัก */
+    }
+
+    header {
+        padding: 10px 0; /* ลด Padding แนวตั้ง */
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start; /* จัดข้อความไปทางซ้าย */
+        padding: 0 10px; /* ลด Padding ด้านข้าง */
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* ลดขนาดฟอนต์ในมือถือ */
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* ลดขนาดฟอนต์ของลิงก์ */
+    }
+
+    .form-container {
+        grid-template-columns: 1fr; /* ใช้คอลัมน์เดียว */
+    }
+
+    .form-item {
+        padding: 15px; /* ลด Padding */
+        margin: 10px auto; /* ลดระยะห่างแนวตั้ง */
+    }
+
+    section h1 {
+        font-size: 1.5em; /* ลดขนาดฟอนต์หัวข้อ */
+    }
+
+    section p, section ol {
+        font-size: 0.9em; /* ลดขนาดฟอนต์เนื้อหา */
+    }
+
+    table {
+        font-size: 12px; /* ลดขนาดฟอนต์ในตาราง */
+    }
+
+    th, td {
+        padding: 10px; /* ลด Padding ของเซลล์ */
+    }
+
+    footer {
+        padding: 10px 0; /* ลด Padding แนวตั้ง */
+        font-size: 14px; /* ลดขนาดฟอนต์ */
+    }
+    nav ul {
+        flex-direction: column;  /* เรียงลิงก์ในแนวตั้งเมื่อหน้าจอเล็ก */
+        align-items: center;     /* จัดกลาง */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;   /* ขนาดตัวอักษรใหญ่ขึ้นเล็กน้อย */
+        padding: 12px 20px;  /* เพิ่มพื้นที่ให้กับลิงก์ */
+    }
+    footer {
+        padding: 30px 0;  /* เพิ่มพื้นที่ใน footer */
+    }
+
+    footer p {
+        font-size: 1.2rem;  /* ขยายขนาดตัวอักษรให้ใหญ่ขึ้น */
+    }
+}
